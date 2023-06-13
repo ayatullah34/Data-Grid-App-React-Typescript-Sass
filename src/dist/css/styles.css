@@ -125,7 +125,7 @@
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 5px !important;
+  padding-left: 5px !important;
   color: #000000;
 }
 
@@ -136,7 +136,7 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 5px !important;
+  padding-left: 5px !important;
   color: #000000;
 }
 
@@ -173,10 +173,10 @@
 .table-skeleton {
   background: linear-gradient(180deg, #eff2ff -30.56%, rgba(232, 236, 255, 0) 135.85%);
   margin: 0 18px;
-  max-height: 100%;
+  height: 841px;
   border-radius: 6px;
-  margin-bottom: 31px;
-  padding: 2px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 .table-skeleton__inside {
   margin: 0 60px;
@@ -303,13 +303,12 @@
 
 .pagination {
   justify-content: space-between;
-  margin-bottom: 31px;
+  padding: 40px;
 }
 .pagination .rows-update {
-  padding: 12px;
-  gap: 23px;
-  margin-top: 18px;
-  flex: 1;
+  flex-direction: row;
+  width: 140px;
+  justify-content: space-between;
 }
 .pagination .rows-update span {
   font-family: "Poppins", sans-seri;

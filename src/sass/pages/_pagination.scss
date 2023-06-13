@@ -2,15 +2,14 @@
     @extend %display-flex;
     @extend %align-center;
     justify-content: space-between;
-    margin-bottom: 31px;
+    padding:40px;
   
     .rows-update {
       @extend %display-flex;
       @extend %align-center;
-      padding: 12px;
-      gap: 23px;
-      margin-top: 18px;
-      flex: 1;
+      flex-direction: row;
+      width:140px;
+      justify-content: space-between;
       span {
         font-family: $poppins;
         font-style: normal;

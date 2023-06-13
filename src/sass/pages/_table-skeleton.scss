@@ -11,17 +11,17 @@
     border-bottom-right-radius: 8px;
 }
 
+
 .table-skeleton {
     background: $skeleton-color;
     margin: 0 18px;
-    max-height: 100%;
+    height: 841px;
     border-radius: 6px;
-    margin-bottom: 31px;
-    padding: 2px;
+    padding: 20px;
+    margin-bottom: 30px;
 
     &__inside {
         margin: 0 60px;
-
         @include mobile {
             margin: 0 10px;
         }

@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].[contenthash].js',
         publicPath: '/',
     },
     resolve: {
@@ -25,17 +25,17 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'assets/[name].[ext]',
-                            publicPath: '/',
-                        },
-                    },
-                ],
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name].[ext]',
+                },
             },
         ],
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -43,7 +43,6 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
             'process.env.PUBLIC_URL': JSON.stringify(''),
-            'process.env.NODE_ENV': JSON.stringify('development'),
         }),
     ],
     devServer: {

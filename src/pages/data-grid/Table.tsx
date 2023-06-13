@@ -1,5 +1,5 @@
 import { Column, DataGrid } from 'devextreme-react/data-grid';
-import React,{ useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Pagination from '../../components/Pagination';
 import { RootState } from '../../interfaces/IRootState';
@@ -86,7 +86,7 @@ const Table = () => {
                 onRowPrepared={onRowPrepared}
                 onRowClick={handleRowClick}
                 wordWrapEnabled
-                height={658}
+                height={600}
             >
                 <Column
                     dataField="link"
