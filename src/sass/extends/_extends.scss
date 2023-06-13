@@ -1,0 +1,26 @@
+@import '../variables/index';
+@import '../mixins/mixins';
+
+%display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+%flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+%align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+%flex-center {
+    @extend %display-flex;
+    @extend %align-center;
+    justify-content: center;
+}

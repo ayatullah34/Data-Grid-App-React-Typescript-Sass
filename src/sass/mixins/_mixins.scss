@@ -1,0 +1,19 @@
+@import '../variables/index';
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content
+    }
+};
+
+@mixin box-shadow($input) {
+    -webkit-box-shadow: $input;
+    box-shadow:$input;
+    -moz-box-shadow:$input;
+};

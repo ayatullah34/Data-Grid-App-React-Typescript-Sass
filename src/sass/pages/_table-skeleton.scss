@@ -1,0 +1,29 @@
+.dx-datagrid-borders>.dx-datagrid-headers {
+    border: 1px solid #EAEAEA;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dx-datagrid-borders>.dx-datagrid-total-footer,
+.dx-datagrid-borders>.dx-datagrid-rowsview {
+    border: 1px solid #EAEAEA;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.table-skeleton {
+    background: $skeleton-color;
+    margin: 0 18px;
+    max-height: 100%;
+    border-radius: 6px;
+    margin-bottom: 31px;
+    padding: 2px;
+
+    &__inside {
+        margin: 0 60px;
+
+        @include mobile {
+            margin: 0 10px;
+        }
+    }
+}

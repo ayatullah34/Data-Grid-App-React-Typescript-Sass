@@ -1,0 +1,44 @@
+.toolbar {
+    margin-top: 44px;
+    margin-bottom: 10px;
+    @extend %display-flex;
+    @extend %align-center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &__div {
+        @extend %flex-center;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    &__filter-icon {
+        cursor: pointer;
+        width: 49px;
+        height: 42px;
+        background: #FFFFFF;
+        border-radius: 29px;
+        @extend %flex-center;
+    }
+
+    &__add-icon {
+        cursor: pointer;
+        width: 175px;
+        height: 42px;
+        background: $main-purple;
+        border-radius: 39px;
+        @extend %flex-center;
+        font-family: $poppins;
+        color: $main-white;
+        font-size: 14px;
+        gap: 10px;
+
+        @include mobile {
+            width: 150px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+}

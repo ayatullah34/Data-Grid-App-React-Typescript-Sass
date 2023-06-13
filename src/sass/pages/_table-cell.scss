@@ -1,0 +1,41 @@
+.table-cell {
+    font-family: $inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px !important;
+    color: #000000;
+}
+
+.table-header-cell {
+    font-family: $poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px !important;
+    color: #000000;
+}
+
+.dx-datagrid .dx-row>td,
+.dx-datagrid .dx-row>tr>td {
+    padding: 22px !important;
+    cursor: pointer;
+}
+
+.dx-datagrid-rowsview {
+    .dx-row:nth-child(even) {
+        background: $row-even; // Set the background color for even rows
+    }
+
+    .dx-row:nth-child(odd) {
+        background: $skeleton-color;
+    }
+}
+
+.selected {
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.11);
+}
