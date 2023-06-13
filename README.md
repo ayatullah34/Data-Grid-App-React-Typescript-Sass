@@ -8,7 +8,7 @@ At the bottom of the data grid, there are two different filters. Users can selec
 The Pagination and Search Panel components in this application are custom-built and can be reused in other pages within the project, tailored to different requirements. The application is developed using Redux Toolkit, TypeScript, React, and Sass, with additional configurations such as webpack, Babel, and Gulp.
 
 ## Structure
-* The folder named `__dist__` contains build of the application. 
+* The folder named `dist` contains build of the application. 
 * The `public/assets` folder contains SVG images. 
 * Under the `src` folder, there is a `components` and `pages` folders that includes all the custom components and pages used in the application. 
 * The `src/constant` folder contains constant data used in the application. 
