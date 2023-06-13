@@ -83,4 +83,11 @@
         background: $main-purple;
         color: $main-white;
     }
+
+    .close,
+    .save {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
 }

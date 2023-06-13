@@ -1,4 +1,3 @@
-
 .dx-popup-wrapper>.dx-overlay-content {
     border-radius: 19px;
     background: $main-white;
@@ -6,11 +5,11 @@
 
 .dx-popup-wrapper .dx-popup-title {
     border-bottom: none;
-  }
-  
-  .dx-popup-content {
+}
+
+.dx-popup-content {
     padding-top: 0;
-  }
+}
 
 
 .add-dialog-content {
@@ -62,11 +61,19 @@
     .close {
         background: #F5F7FF;
         color: $main-purple;
+
     }
 
     .save {
         background: $main-purple;
         color: $main-white;
+    }
+
+    .close,
+    .save {
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     .dx-button:not(:last-child) {

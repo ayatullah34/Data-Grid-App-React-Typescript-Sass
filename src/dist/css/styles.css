@@ -206,6 +206,9 @@
   background: #FFFFFF;
   border-radius: 29px;
 }
+.toolbar__filter-icon:hover {
+  opacity: 0.5;
+}
 .toolbar__add-icon {
   cursor: pointer;
   width: 175px;
@@ -216,6 +219,9 @@
   color: white;
   font-size: 14px;
   gap: 10px;
+}
+.toolbar__add-icon:hover {
+  opacity: 0.7;
 }
 @media (max-width: 768px) {
   .toolbar__add-icon {
@@ -286,6 +292,10 @@
 .add-dialog-buttons .save {
   background: #744BFC;
   color: white;
+}
+.add-dialog-buttons .close:hover,
+.add-dialog-buttons .save:hover {
+  opacity: 0.5;
 }
 .add-dialog-buttons .dx-button:not(:last-child) {
   margin-right: 17px;
@@ -470,4 +480,8 @@
 .filter-dialog-buttons .save {
   background: #744BFC;
   color: white;
+}
+.filter-dialog-buttons .close:hover,
+.filter-dialog-buttons .save:hover {
+  opacity: 0.5;
 }

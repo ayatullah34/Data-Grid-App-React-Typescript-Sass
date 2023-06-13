@@ -21,6 +21,9 @@
         background: #FFFFFF;
         border-radius: 29px;
         @extend %flex-center;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__add-icon {
@@ -34,6 +37,10 @@
         color: $main-white;
         font-size: 14px;
         gap: 10px;
+
+        &:hover {
+            opacity: 0.7;
+        }
 
         @include mobile {
             width: 150px;

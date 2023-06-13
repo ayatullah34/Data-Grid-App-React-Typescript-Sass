@@ -1,7 +1,7 @@
 import { Popup } from 'devextreme-react';
 import { Button } from 'devextreme-react/button';
 import { TextBox } from 'devextreme-react/text-box';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Dispatch } from 'redux';
 import { RootState } from '../../../interfaces/IRootState';
@@ -25,6 +25,9 @@ const AddAccountDialog: React.FC<AddAccountDialogProps> = ({
         name: '',
         description: '',
     });
+    
+    // Check if any of the form values is empty
+    const isFormEmpty = useMemo(() => Object.values(formValues).some(value => value === ''), [formValues]);
 
     const handleInputChange = useCallback((e: any) => {
         const { name, value } = e?.event?.target || '';
@@ -67,6 +70,7 @@ const AddAccountDialog: React.FC<AddAccountDialogProps> = ({
     }, [dataSource, formValues, onClose, dispatch]);
 
 
+
     return (
         <Popup
             visible={isOpen}
@@ -104,7 +108,7 @@ const AddAccountDialog: React.FC<AddAccountDialogProps> = ({
             </div>
             <div className="add-dialog-buttons">
                 <Button text="Vazgeç" className="close" onClick={handleCancel} />
-                <Button text="Kaydet" className="save" onClick={handleSave} />
+                <Button text="Kaydet" className="save" disabled={isFormEmpty} onClick={handleSave} />
             </div>
         </Popup>
     );
