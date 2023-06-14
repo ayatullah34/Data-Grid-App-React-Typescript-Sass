@@ -230,6 +230,7 @@
 }
 @media (max-width: 768px) {
   .toolbar__add-icon {
+    margin-left: auto;
     width: 120px;
     font-size: 10px;
     gap: 1px;

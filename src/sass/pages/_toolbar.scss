@@ -45,6 +45,7 @@
         }
 
         @include mobile {
+            margin-left: auto;
             width: 120px;
             font-size: 10px;
             gap: 1px;
