@@ -47,7 +47,10 @@
         @include mobile {
             width: 150px;
             font-size: 12px;
-            margin-left: 10px;
+            gap: 1px;
+            .dx-icon-plus{
+                font-size: 12px;
+            }
         }
     }
 }
