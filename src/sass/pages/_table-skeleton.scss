@@ -19,11 +19,15 @@
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 30px;
+    @include mobile {
+        margin: 0 10px;
+        padding: 10px;
+    }
 
     &__inside {
         margin: 0 60px;
         @include mobile {
-            margin: 0 10px;
+            margin: 0 0px;
         }
     }
 }

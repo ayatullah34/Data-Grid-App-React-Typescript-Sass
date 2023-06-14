@@ -5,22 +5,22 @@
   padding: 0;
 }
 
-.pagination .paging, .pagination .rows-update, .pagination, .toolbar, .header__social-media, .header__links, .header, .filter-dialog-item, .pagination .paging .left-arrow,
-.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon, .toolbar__div {
+.pagination .paging, .pagination .rows-update, .pagination, .toolbar__div, .toolbar, .header__social-media, .header__links, .header, .filter-dialog-item, .pagination .paging .left-arrow,
+.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.pagination .paging, .pagination .rows-update, .pagination, .toolbar, .header__links, .header, .filter-dialog-item, .pagination .paging .left-arrow,
-.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon, .toolbar__div {
+.pagination .paging, .pagination .rows-update, .pagination, .toolbar__div, .toolbar, .header__links, .header, .filter-dialog-item, .pagination .paging .left-arrow,
+.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
 .filter-dialog-item, .pagination .paging .left-arrow,
-.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon, .toolbar__div {
+.pagination .paging .right-arrow, .pagination .paging .page-number, .toolbar__add-icon, .toolbar__filter-icon {
   justify-content: center;
 }
 
@@ -178,12 +178,18 @@
   padding: 20px;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .table-skeleton {
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
 .table-skeleton__inside {
   margin: 0 60px;
 }
 @media (max-width: 768px) {
   .table-skeleton__inside {
-    margin: 0 10px;
+    margin: 0 0px;
   }
 }
 
@@ -191,13 +197,12 @@
   margin-top: 44px;
   margin-bottom: 10px;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .toolbar__div {
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 10px;
-  flex-grow: 1;
 }
 .toolbar__filter-icon {
   cursor: pointer;
@@ -305,10 +310,13 @@
   justify-content: space-between;
   padding: 40px;
 }
+@media (max-width: 768px) {
+  .pagination {
+    padding: 20px;
+  }
+}
 .pagination .rows-update {
-  flex-direction: row;
-  width: 140px;
-  justify-content: space-between;
+  gap: 23px;
 }
 .pagination .rows-update span {
   font-family: "Poppins", sans-seri;

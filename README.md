@@ -5,7 +5,7 @@ To search for specific data entries, users can utilize the Search Panel. By ente
 
 At the bottom of the data grid, there are two different filters. Users can select the number of rows to be displayed per page, and the "page" filter allows users to view the data entries on different pages separately. The social media icons at the top-right corner provide quick access to the company's social media accounts.
 
-The Pagination and Search Panel components in this application are custom-built and can be reused in other pages within the project, tailored to different requirements. The application is developed using Redux Toolkit, TypeScript, React, and Sass, with additional configurations such as webpack, Babel, and Gulp.
+The Pagination and Search Panel components in this application are custom-built and can be reused in other pages within the project, tailored to different requirements. The application is developed using Redux Toolkit, TypeScript, React, and Sass, with additional configurations such as webpack, Babel, and Gulp.You can view the live application using this URL: https://master--quiet-treacle-6bcba7.netlify.app/
 
 ## Structure
 * The folder named `dist` contains build of the application. 

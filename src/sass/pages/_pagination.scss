@@ -3,13 +3,15 @@
     @extend %align-center;
     justify-content: space-between;
     padding:40px;
+
+    @include mobile {
+      padding:20px;
+  }
   
     .rows-update {
       @extend %display-flex;
       @extend %align-center;
-      flex-direction: row;
-      width:140px;
-      justify-content: space-between;
+      gap: 23px;
       span {
         font-family: $poppins;
         font-style: normal;
