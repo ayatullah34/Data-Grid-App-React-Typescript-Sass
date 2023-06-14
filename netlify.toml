@@ -1,12 +1,9 @@
 [build]
   command = "npm run build"
-  publish = "build"
+  publish = "dist"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-# [[plugins]]
-#   package = "netlify-plugin-inline-functions-env"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
