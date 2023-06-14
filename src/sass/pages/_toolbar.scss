@@ -45,11 +45,11 @@
         }
 
         @include mobile {
-            width: 150px;
-            font-size: 12px;
+            width: 120px;
+            font-size: 10px;
             gap: 1px;
             .dx-icon-plus{
-                font-size: 12px;
+                font-size: 10px;
             }
         }
     }

@@ -230,12 +230,12 @@
 }
 @media (max-width: 768px) {
   .toolbar__add-icon {
-    width: 150px;
-    font-size: 12px;
+    width: 120px;
+    font-size: 10px;
     gap: 1px;
   }
   .toolbar__add-icon .dx-icon-plus {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
