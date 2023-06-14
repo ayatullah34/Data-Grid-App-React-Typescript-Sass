@@ -55,6 +55,7 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "html-webpack-plugin": "^5.5.3",
+    "netlify-plugin-cache": "^1.0.3",
     "react-svg-loader": "^3.0.3",
     "sass": "^1.62.1",
     "style-loader": "^3.3.3",
