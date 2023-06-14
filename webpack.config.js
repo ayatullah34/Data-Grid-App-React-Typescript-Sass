@@ -40,6 +40,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',
+            favicon: 'public/assets/header-logo.svg',
         }),
         new webpack.DefinePlugin({
             'process.env.PUBLIC_URL': JSON.stringify(''),
