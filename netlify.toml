@@ -9,7 +9,7 @@
   package = "netlify-plugin-inline-functions-env"
 
 [[plugins]]
-  package = "@netlify/plugin-react-next"
+  package = "netlify-plugin-react-next"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
