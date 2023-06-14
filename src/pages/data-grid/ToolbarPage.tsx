@@ -37,6 +37,7 @@ const ToolbarPage: React.FC<ToolbarPageProps> = ({ onSearch }) => {
           <img src={filterIcon} alt="filter-icon" />
         </div>
       </div>
+      <div style={{flexGrow:1}}/>
       <div className="toolbar__add-icon" onClick={handleAddClick}>
         <i className="dx-icon-plus"></i>
         Yeni hesap ekle
